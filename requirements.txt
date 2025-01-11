@@ -6,3 +6,5 @@ biopython==1.84
 google-generativeai==0.8.3
 #mongodb 
 pymongo==4.10.1
+#dnspython
+dnspython==2.7.0
