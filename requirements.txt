@@ -1,0 +1,6 @@
+#streamlit 
+streamlit==1.41.0
+#biopython
+biopython==1.84
+#google-generativeai
+google-generativeai==0.8.3
