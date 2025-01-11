@@ -5,8 +5,8 @@ import streamlit as st  # Only if you plan to use st.secrets for configuration
 # Retrieve MongoDB URI from Streamlit secrets for security (optional)
 MONGO_URI = st.secrets["mongo"]["uri"]
 
-# Establish connection to the MongoDB Atlas cluster
-client = MongoClient(MONGO_URI)
+# Establish connection to the MongoDB Atlas cluster with increased timeout settings
+client = MongoClient(MONGO_URI, serverSelectionTimeoutMS=5000)  # 5000ms = 5 seconds
 
 # Select your database and collection
 db = client.myDatabase        # Use your actual database name
